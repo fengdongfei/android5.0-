@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chexiangjia_mac.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden"
+        android:configChanges="orientation|keyboardHidden"
+        android:theme="@style/DefaultTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.chexiangjia_mac.myapplication.taransitions.TransitionsActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.example.chexiangjia_mac.myapplication.taransitions.ExplodeActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.example.chexiangjia_mac.myapplication.taransitions.FadeActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.example.chexiangjia_mac.myapplication.taransitions.SlideActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.example.chexiangjia_mac.myapplication.taransitions.ShareActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:theme="@style/WidgetTheme"
+            android:name="com.example.chexiangjia_mac.myapplication.widget.WidgetActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+    </application>
+
+</manifest>
